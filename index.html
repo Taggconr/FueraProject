@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <!-- icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <button class="header__button" id="header__button">
+            <span class="button__icon"><i class="ri-menu-fill"></i></span>
+        </button>
+        <div class="header__logo">
+            <img src="public/static/logo.png" class="logotype" alt="logotype" loading="lazy">
+        </div>
+        <nav class="header__navigation" id="header__navigation">
+            <ul class="navigation__list" id="navigation__list">
+                <li class="navigation__link" id="navigation__link">
+                    Home +
+                </li>
+                <li class="navigation__link" id="navigation__link">
+                    Shop +
+                </li>
+                <li class="navigation__link" id="navigation__link">
+                    About US
+                </li>
+                <li class="navigation__link" id="navigation__link">
+                    Blog +
+                </li>
+                <li class="navigation__link" id="navigation__link">
+                    Pages +
+                </li>
+                <li class="navigation__link" id="navigation__link">
+                    Contact
+                </li>
+            </ul>
+        </nav>
+        <menu class="header__menu" id="header__menu">
+            <li class="menu__items" id="menu__items">
+                <button class="menu__item   menu__item--none" id="menu__item">
+                    <span class="menu__icon" id="menu__icon"><i class="ri-search-line"></i></span>
+                </button>
+                <button class="menu__item" id="menu__item">
+                    <span class="menu__icon" id="menu__icon"><i class="ri-user-line"></i></span>
+                </button>
+                <button class="menu__item  menu__item--none" id="menu__item">
+                    <span class="menu__icon" id="menu__icon"><i class="ri-heart-line"></i></span>
+                </button>   
+                <button class="menu__item" id="menu__item">
+                    <span class="menu__icon" id="menu__icon"><i class="ri-shopping-bag-line"></i></span>
+                </button>
+            </li>
+        </menu>
+    </header>
+    <main class="main" id="main">
+        <section class="intro">
+            <div class="intro__body">
+                <div class="intro__swiper">
+                    <div class="swiper-wrapper intro__wrapper">
+                        <div class="swiper-slide intro__slide"><img class="intro__image" src="public/intro-slider1.png" alt="slide-image" loading="lazy"></div>
+                        <div class="swiper-slide intro__slide"><img class="intro__image" src="public/intro-slider2.png" alt="slide-image" loading="lazy"></div>
+                        <div class="swiper-slide intro__slide"><img class="intro__image" src="public/intro-slider3.png" alt="slide-image" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-hover"></div>
+                <div class="swiper-button-next swiper-button-hover"></div>
+            </div>
+        </section>
+        <div class="test-cont">
+            <section class="test">
+                <div class="test-two">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ab ullam repudiandae impedit dicta. Maiores aliquid impedit quisquam illo quam, dolorem mollitia aspernatur eveniet sint ipsam alias repellat accusantium corporis? Molestiae, modi eum! Et recusandae deleniti libero perspiciatis rem pariatur.
+                </div>    
+            </section>
+        </div>
+    </main>
+    <footer class="">
+
+    </footer>
+    <script src="js/swiper-bundle.js"></script>
+    <script>
+        const swiper = new Swiper('.intro__swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 0,
+            effect: 'fade',
+            fadeEffect: {
+                 crossFade: true,
+            },
+        });
+    </script>
+</body>
+</html>

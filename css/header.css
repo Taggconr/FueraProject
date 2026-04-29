@@ -5,6 +5,9 @@
     gap: 20px;
     padding-inline: 20px;
 }
+.header__logo {
+    padding: 25px 0;
+}
 .header__navigation {
     display: flex;
     align-items: center;
@@ -56,6 +59,9 @@
     color: black;
 }
 @media (max-width: 990px) {
+    .header__logo {
+        padding: 15px 0;
+    }
     .header__navigation {
         display: none;
     }

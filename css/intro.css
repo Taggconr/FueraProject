@@ -13,14 +13,28 @@
 
 .intro__swiper {
     width: 100%;
+    height: 600px;
+}
+
+.swiper-slide {
     height: 100%;
 }
 
 .slide__content {  
+    height: 100%;
+    box-sizing: border-box;
     color: white;
     background-size: cover;
     background-position: center;
     padding: 150px 150px;
+}
+.slide__content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.slide__content-body--mod {
+    align-items: center;
 }
 
 .slide__content--one {
@@ -62,15 +76,13 @@
     position: relative;
     top: 5px;
 }
-.slide__subtitle--mod {
-    position: relative;
-    left: 95px;
-}
+
 .slide__title {
     display: flex;
     flex-direction: column;
     font-size: 60px;
     font-weight: bold;
+    gap: 5px;
 }
 .slide__description {
     font-family: 'Open Sans', sans-serif;
@@ -83,10 +95,12 @@
 .slide__button {
     font-size: 18px;
     font-weight: medium;
-    padding: 20px 40px;
     background-color: white;
     border-radius: 4px;
-    margin-top: 40px;
+    display: inline-block;
+     width: fit-content;
+    padding: 20px 40px;
+    white-space: nowrap;
 }
 .slide__button:hover {
     animation-duration: 300ms;
@@ -123,16 +137,59 @@
     visibility: visible;
 }
 
-.intro__image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+@media (max-width: 1024px) {
+
+    .intro__swiper {
+        height: 400px;
+    }
+    .slide__content {  
+        padding: 50px 50px;
+    }
+
+    .slide__title {
+        font-size: 32px;
+    }
+
 }
 
-
-@media (max-width: 768px) {
-    .intro__image {
-        height: 300px;
+@media (max-width: 740px) {
+    .intro__swiper {
+        height: 400px;
     }
-    
+
+    .slide__title {
+        font-size: 32px;
+    }
+    .slide__content--two {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide__content {  
+        padding: 25px 25px;
+    }    
+    .intro__swiper {
+        height: 400px;
+    }
+    .slide__subtitle--pos {
+        display: none;
+    }
+    .slide__title {
+        font-size: 32px;
+    }
+    .slide__content--one {
+        text-align: center;
+        align-items: center;
+    }
+    .slide__content--two {
+        align-items: center;
+    }
+    .slide__content--three {
+        text-align: center;
+        align-items: center;
+    }
+    .slide__content-body {
+        align-items: center;
+    }
 }

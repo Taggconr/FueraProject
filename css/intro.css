@@ -29,6 +29,16 @@
     padding: 150px 150px;
 }
 .slide__content-body {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.swiper-slide-active .slide__content-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide__content-body {
     display: flex;
     flex-direction: column;
     gap: 25px;

@@ -187,6 +187,25 @@
                 disableOnInteraction: false, 
                 pauseOnMouseEnter: true,
             },
+            on: {
+                slideChangeTransitionEnd: function() {
+                    setTimeout(() => {
+                        const activeSlide = document.querySelector('.swiper-slide-active');
+                        if (activeSlide) {
+                            const content = activeSlide.querySelector('.slide__content-body');
+                            if (content) {
+                                content.style.animation = 'none';
+                                content.offsetHeight;
+                                content.style.animation = '';
+
+                                content.classList.remove('animate-in');
+                                content.offsetHeight;
+                                content.classList.add('animate-in');
+                            }
+                        }
+                    }, 150);
+                }
+            }
         });
     </script>
 </body>

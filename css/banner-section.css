@@ -1,4 +1,5 @@
 .banner__section {
+    margin-top: 70px;
     max-width: 1440px;
     width: 100%;
     display: grid;
@@ -16,6 +17,14 @@
     margin-top: 25px;
     transition: background-size 500ms ease;
     background-color: #f6f6f6;
+    color: black;
+    cursor: pointer;
+    padding: 50px;
+}
+.banner__content:hover {
+  transition: 300ms;
+  transition-duration: 300ms;
+  color: #f51c1c;
 }
 .banner__content--two {
     grid-row: span 2;
@@ -38,7 +47,6 @@
     background-image: url(../public/banner1.webp);
 
 }
-
 .banner__content--two:before {
     background-image: url(../public/banner3.webp);
 }
@@ -60,12 +68,36 @@
 }
 
 .banner__text {
+  height: 100%;
   font-size: 32px;
-  color: black;
   font-weight: 600;
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.banner__text--one{
+  justify-content: center;
+  text-align: left;
+}
+.banner__text--one > * {
+  margin-left: auto;
+}
+.banner__text--two{
+  align-items: start;
+  justify-content: center;
+}
+.banner__text--three {
+  margin-top: 15%;
+}
+.banner__text--four {
+  align-items: center;
+}
+.banner__text--five {
+  justify-content: center;
+  text-align: left;
+}
+.banner__text--five > * {
+  margin-left: auto;
 }
 .banner__line {
   display: flex;
@@ -83,3 +115,4 @@
   height: 2px;
   background-color: red;
 }
+

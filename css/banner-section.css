@@ -58,3 +58,28 @@
   position: relative;
   z-index: 2;
 }
+
+.banner__text {
+  font-size: 32px;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.banner__line {
+  display: flex;
+  align-items: center;
+}
+.banner__line--black {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+}
+.banner__line--red {
+  display: block;
+  width: 104px;
+  height: 2px;
+  background-color: red;
+}

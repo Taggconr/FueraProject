@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(intro.css);
 @import url(banner-section.css);
+@import url(popular-section.css);
 * {
     margin: 0;
     padding: 0;

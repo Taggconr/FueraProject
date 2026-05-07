@@ -87,3 +87,27 @@
     color: white;
 }
 
+@media (max-width: 1500px) {
+    .cards__container {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .cards__container {
+        width: 65%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__content {
+        align-items: center;
+        justify-content: center;
+    }
+    .card__content--three {
+        align-items: center;
+    }
+    .card__title {
+        font-size: 24px;
+    }
+}
+
+

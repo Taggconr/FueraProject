@@ -32,3 +32,131 @@
     animation-duration: 300ms;
     border: #f51c1c 1px solid;
 }
+.popular__items {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+.popular__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 269px;
+    cursor: pointer;
+}
+.popular__image {
+    position: relative;      
+    width: 100%;
+    height: 269px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.popular__image--wrap {
+    width: 100%;
+    height: 269px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.new-flag {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    display: inline-block;
+    width: 25px;
+    height: 50px;
+    background: red;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+}
+.new-flag__text {
+    position: absolute;
+    left: 1px;
+    top: 35%;
+    color: white;
+    font-size: 11px;
+}
+
+.popular__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    border-bottom: #c8c8c8 1px solid;
+    border-inline: #c8c8c8 1px solid;
+    padding: 20px;
+}
+
+.rainbow-circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rainbow-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.rainbow-circle--red    { background-color: #ff4444; }
+.rainbow-circle--orange { background-color: #ffaa33; }
+.rainbow-circle--green  { background-color: #44cc44; }
+.rainbow-circle--blue   { background-color: #4488ff; }
+
+.popular__name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.popular__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    position: relative;
+}
+.popular__price--new {
+    color: #f51c1c;
+    font-size: 18px;
+}
+.popular__price--old {
+    color: #A5A5A5;
+    font-size: 15px;
+}
+.popular__price--line {
+    width: 65px;
+    height: 1px;
+    display: inline-block;
+    background-color: #A5A5A5;
+    position: absolute;
+    left: 70px;
+}   
+.popular__button {
+    color: white;
+    background-color: #f51c1c;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0;
+}
+.popular__item:hover {
+    .popular__button {
+        transition: 300ms;
+        animation-duration: 300ms;
+        opacity: 1;
+    }
+    .popular__image--wrap {
+        transition: 300ms;
+        animation-duration: 300ms;
+        transform: scale(1.05);
+    }
+}
+.popular__button:hover {
+    transition: 300ms;
+    animation-duration: 300ms;
+    background-color: black;
+}

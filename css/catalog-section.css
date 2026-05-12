@@ -1,0 +1,113 @@
+.catalog__section {
+    margin-top: 120px;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+.catalog__content {
+    flex: 2;
+}
+.catalog__banner {
+    flex: 1;
+}
+.catalog__header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 65px;
+}
+
+.catalog__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.catalog__decoration {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    padding-bottom: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.catalog__line {
+    display: inline-block;
+    background-color: lightslategray;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 25px;
+}
+.catalog__line--one {
+    flex: 2;
+}
+.catalog__line--two {
+    flex: 1;
+}
+.catalog__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.catalog__card {
+    width: 260px;
+    height: 260px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.catalog__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.catalog__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 13px;
+}
+.catalog__name__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog__name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.catalog__button {
+    color: white;
+    background-color: #f51c1c;
+    padding: 9px 7px;
+    font-size: 13px;
+    border-radius: 5px;
+    opacity: 0;
+}
+.catalog__button:hover {
+    transition: 300ms;
+    animation-duration: 300ms;
+    background-color: black;
+}
+.catalog__card:hover {
+    .catalog__button {
+        transition: 300ms;
+        animation-duration: 300ms;
+        opacity: 1;
+    }
+}
+.catalog__banner {
+    background-image: url(../public/bannerCatalog.webp);
+    width: 100%;
+    height: 753px;
+    background-size: cover;
+    background-position: center;
+}

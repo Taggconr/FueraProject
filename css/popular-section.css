@@ -98,11 +98,10 @@
 
 .rainbow-circle {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     border-radius: 100%;
 }
-
 .rainbow-circle--red    { background-color: #ff4444; }
 .rainbow-circle--orange { background-color: #ffaa33; }
 .rainbow-circle--green  { background-color: #44cc44; }
@@ -173,6 +172,10 @@
 @media (max-width: 900px) {
     .popular__items {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .rainbow-circle {
+        width: 10px;
+        height: 10px;
     }
 }
 @media (max-width: 600px) {

@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Furniture Tree | Стильная мебель для дома</title>
+    <!--Meta seo-->
+    <meta name="description" content="Интернет-магазин стильной мебели Furniture Tree. Диваны, кресла, столы, светильники. Высокое качество, приемлимые цены, доставка.">
+    <meta name="keywords" content="мебель, купить мебель, интернет-магазин мебели, диван, кресло, стол, стул, шкаф, комод, кровать, прихожая, гостиная, спальня, детская мебель, мягкая мебель, корпусная мебель, деревянная мебель, современная мебель, недорогая мебель, распродажа мебели, furniture, buy furniture, online furniture store, sofa, couch, armchair, table, chair, wardrobe, cupboard, chest of drawers, dresser, bed, hallway furniture, entryway furniture, living room furniture, bedroom furniture, children's furniture, kids' furniture, upholstered furniture, case goods, cabinet furniture, wooden furniture, modern furniture, affordable furniture, cheap furniture, budget-friendly furniture, furniture sale, furniture clearance">
+    <meta name="author" content="Furniture Tree">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!--OpenGraf-->
+    <meta property="og:title" content="Furniture Tree - Стильная мебель для дома">
+    <meta property="og:description" content="Купите качественную мебель с доставкой. Диваны, кресла, столы и аксессуары. Акции и скидки до 50%">
+    <meta property="og:url" content="https://taggconr.github.io/FueraProject/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Furniture Tree">
     <!-- icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
     <!-- css -->
@@ -14,7 +28,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Schema (организация)-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Furniture Tree",
+          "url": "https://taggconr.github.io/FueraProject/",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Волгоград",
+            "addressCountry": "RU"
+          }
+        }
+    </script>
+    <!--Schema (сайт)-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Furniture Tree",
+          "url": "https://taggconr.github.io/FueraProject/",
+        }
+    </script>
+    <!--Schema (товар)-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Fashion Plastic Chair",
+          "image": "https://taggconr.github.io/FueraProject/product1.webp",
+          "description": "Современное пластиковое кресло в стиле минимализм. Легкое, прочное, подходит для дома и офиса.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Furniture Tree"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://taggconr.github.io/FueraProject/chair1",
+            "priceCurrency": "USD",
+            "price": "150.00",
+            "priceValidUntil": "2026-12-31"
+          }
+        }
+    </script>
 </head>
+
+
+
 <body>
     <header class="header" id="header">
         <button class="header__button" id="header__button">
@@ -534,7 +595,7 @@
                     </div>
                 </div>
                 <div class="catalog__cards">
-                    <div class="catalog__card">
+                    <div class="catalog__card" id="chair1">
                         <div class="catalog__image">
                             <span class="new-flag">
                                 <span class="new-flag__text">New</span>

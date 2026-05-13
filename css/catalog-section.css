@@ -19,8 +19,8 @@
 }
 
 .catalog__title {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 500;
 }
 
 .catalog__decoration {
@@ -183,9 +183,91 @@
     }
 }
 .catalog__banner {
-    background-image: url(../public/bannerCatalog.webp);
+    position: relative;
     width: 100%;
     height: 753px;
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../public/bannerCatalog.webp);
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease;
+        z-index: -1;
+    }
+    
+    
+    &:hover::before {
+        transform: scale(1.05);
+    }
+    
+    
+    .catalog__title--banner,
+    .catalog__stats,
+    .catalot__button__banner {
+        position: relative;
+        z-index: 1;
+    }
+    
+    &:hover {
+        .catalog__title--banner {
+            transition: color 0.3s ease;
+            color: #f51c1c;
+        }
+    }
+}
+.catalog__title--banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.catalog__stats {
+    display: flex;
+    gap: 25px;
+}
+.catalog__stat {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.stat__circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+}
+.catalot__button__banner {
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+    font-weight: 600;
+    padding: 15px 20px; 
+    border-radius: 5px;
+
+    &:hover {
+        animation-duration: 300ms;
+        transition: all 300ms ease;
+        background-color: #f51c1c;
+        border: #f51c1c 1px solid;
+        color: white;
+    }
 }

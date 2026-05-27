@@ -40,6 +40,9 @@ li {
     cursor: pointer;
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
 button {
     font-family: 'Josefin Sans', sans-serif;
     background: none;

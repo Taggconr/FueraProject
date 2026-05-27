@@ -5,6 +5,7 @@
 @import url(popular-section.css);
 @import url(cards-section.css);
 @import url(catalog-section.css);
+@import url(footer.css);
 * {
     margin: 0;
     padding: 0;
